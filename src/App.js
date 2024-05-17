@@ -58,9 +58,9 @@ function App() {
 
   return (
     
-    <div>
+    <div style={{marginBottom: '20px', textAlign: 'center'}}>
       <div id="contentToExport" dangerouslySetInnerHTML={{ __html: htmlContent }} />
-      <button  onClick={exportToPdf}>Export as PDF</button>
+      <button  onClick={exportToPdf} style={{backgroundColor: '#007bff', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer'}}>Export as PDF</button>
     </div>
   );
 }
